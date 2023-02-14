@@ -11,11 +11,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:paddingLeft="30dp"
-            android:src="@drawable/camiseta1" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:paddingLeft="30dp"
+                android:src="@drawable/camiseta1"
+                android:id="@+id/idImgCamiseta"/>
+
+
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -30,18 +37,6 @@
                 android:textColor="@color/black"
                 android:textSize="30dp"
                 android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="40dp"
-                android:src="@drawable/ic_baseline_favorite_border" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="5dp"
-                android:src="@drawable/ic_baseline_share" />
         </LinearLayout>
 
 
@@ -69,13 +64,30 @@
             <RatingBar
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:numStars="5" />
+                android:numStars="1"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="5.0"
                 android:textSize="30dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:paddingLeft="100dp"
+                    android:src="@drawable/ic_baseline_favorite_border" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:paddingLeft="0dp"
+                    android:src="@drawable/ic_baseline_share" />
+            </LinearLayout>
         </LinearLayout>
 
         <Button
