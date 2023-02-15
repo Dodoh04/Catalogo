@@ -44,4 +44,5 @@ public class MainActivity extends AppCompatActivity {
             return null;
         }
     }
+    public View getView( int i, )
 }
